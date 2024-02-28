@@ -1,0 +1,89 @@
+.Container {
+    grid-area: body;
+
+    display: grid;
+    align-content: flex-start;
+    
+    .Title {
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: 600;
+
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+    .Block {
+        display: grid;
+        align-items: flex-start;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 30px;
+
+        margin-bottom: 20px;
+        .BlockText {
+            display: grid;
+            gap: 5px 0;
+
+            .Text {
+                font-weight: 500;
+                color: #3D3D3D;
+                font-size: 16px;
+                line-height: 18px;
+            }
+            input {
+                max-width: 80%;
+                
+                border: 2px solid #EAEAEA;
+                border-radius: 5px;
+                padding: 6px 15px;
+
+                font-size: 16px;
+                line-height: 18px;
+                transition: all 0.3s ease-in-out;
+
+                &:focus {
+                    border-radius: 10px;
+                    border: 2px solid #d7d6d6;
+                }
+            }
+        }
+        .BlockBtn {
+            align-self: flex-end;
+
+            display: grid;
+            grid-auto-flow: column;
+            gap: 0 15px;
+            justify-content: flex-start;
+
+            .Btn {
+                justify-self: flex-start;
+                align-self: flex-end;
+        
+                padding: 10px 23px;
+                font-size: 18px;
+                line-height: 20px;
+                font-weight: 500;
+        
+                color: #7f67ce;
+                border: 2px solid #7f67ce;
+                border-radius: 50px;
+                
+                transition: all 0.3s ease-in-out;
+        
+                &:hover {
+                    background-color: #7f67ce;
+                    color: #fff;
+                }
+            }
+            .Purple {
+                color: #fff;
+                background-color: #7f67ce;
+
+                &:hover {
+                    color: #7f67ce;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}

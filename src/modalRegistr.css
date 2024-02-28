@@ -1,0 +1,53 @@
+h1.h1{
+    margin-top: 5px;
+    color: #28af28;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 800;
+}
+p.p1{
+    margin-top: 10px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+}
+email{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+}
+p.p2{
+    margin-top: 10px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+}
+img.img1{
+    margin-top: 10px;
+    color: #28af28;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

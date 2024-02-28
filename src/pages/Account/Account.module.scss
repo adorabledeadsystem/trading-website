@@ -1,0 +1,18 @@
+.Container {
+    display: grid;
+    grid-template-areas:   'header' 
+                           'body'
+                           'footer';
+    // grid-template-rows: 100px 1fr 100px;
+
+    // height: 100vh;
+
+    .Body {
+        padding: 0 calc(50% - 650px);
+        grid-area: body;
+
+        display: grid;
+        grid-template-areas: 'navbar body';
+        grid-template-columns: 1fr 5fr;
+    }
+}

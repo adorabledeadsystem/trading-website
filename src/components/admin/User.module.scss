@@ -1,0 +1,87 @@
+.adminHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    .headerTitle{
+        font-size: 20px;
+    }
+    .headerButton{
+        padding: 15px 20px;
+        border: 1px solid #000;
+        cursor: pointer;
+    }
+    .searchFlex{
+        display: flex;
+        >p{margin-right: 20px; margin-left: -20px;}
+        >input{border: 1px solid #000; padding-left: 3px;}
+    }
+}
+        .BlockText {
+            display: grid;
+            gap: 5px 0;
+
+            .Text {
+                font-weight: 500;
+                color: #3D3D3D;
+                font-size: 16px;
+                line-height: 18px;
+            }
+            input {
+                max-width: 80%;
+                margin-top: 5px;
+                margin-bottom: 35px;
+                
+                border: 2px solid #EAEAEA;
+                border-radius: 5px;
+                padding: 6px 15px;
+
+                font-size: 16px;
+                line-height: 18px;
+                transition: all 0.3s ease-in-out;
+
+                &:focus {
+                    border-radius: 10px;
+                    border: 2px solid #d7d6d6;
+                }
+            }
+        }
+
+        @media(max-width: 670px){
+            .adminHeader{
+                justify-content: space-evenly;
+                flex-direction: column;
+                height: 140px;
+                .headerButton{
+                    padding: 5px 10px;
+                }
+            }
+        
+        }
+    .questionTitle{
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }    
+    .questionList{
+    .questionItem{
+        border: 1px solid black;
+        margin-top: 15px;
+        cursor: pointer;
+        .question{
+            display: flex; justify-content: space-between; align-items: center; border-bottom: 0.3px solid lightgray;
+            >p{font-size: 18px; margin: 10px 30px}
+            >div{font-size: 26px; margin: 10px 30px}
+        }
+        .questionRequestActive{
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+            margin-top: 20px;
+            margin-left: 30px;
+            margin-bottom: 15px;
+            >textarea{border: 2px solid lightgray;}
+            >button{ padding: 15px 20px;background: black; color: white; width: 20%; margin-top: 5px; cursor: pointer;}
+        }
+    }
+}

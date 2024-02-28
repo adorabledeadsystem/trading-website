@@ -1,0 +1,39 @@
+.Container {
+    grid-area: navbar;
+    display: grid;
+    align-content: flex-start;
+
+    .Title {
+        font-size: 28px;
+        line-height: 30px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .BlockBtn {
+        display: grid;
+        gap: 10px 0;
+        justify-items: flex-start;
+
+        .Btn {
+            padding-left: 10px;
+
+            color: #000;
+            font-size: 18px;
+            line-height: 20px;
+            border-left: 4px solid transparent;
+
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: #7f67ce;
+                border-left: 4px solid #7f67ce;
+            }
+        }
+        .Active {
+            font-weight: 500;
+            color: #7f67ce;
+            border-left: 4px solid #7f67ce;
+        }
+    }
+}
